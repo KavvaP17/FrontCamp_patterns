@@ -22,7 +22,7 @@ export class SearchResultView {
         return `
             <div class="article-img-container">
                 <a class="article-img-wrapper" href="${article.url}">
-                    <img class="article-img" src="${article.urlToImage}" />
+                    <img class="article-img" ${article.urlToImage ? 'src="'+article.urlToImage+'"': ''} />
                     <span class="article-description">${article.description}</span>
                 </a>
             </div>
